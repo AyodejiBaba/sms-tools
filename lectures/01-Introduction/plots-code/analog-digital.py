@@ -1,3 +1,5 @@
+
+#%%
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -16,6 +18,7 @@ ax1.set_title('analog')
 ax1.set_xlabel('time (sec)')
 ax1.set_ylabel('amplitude')
 ax2=plt.subplot(212, sharex=ax1)
+# ax2=plt.subplot(212)
 ax2.plot(t, x, '*', lw=2)
 plt.axis([-1,1,-0.8,0.8])
 plt.grid(True)
@@ -26,3 +29,5 @@ plt.ylabel('amplitude')
 plt.tight_layout()
 plt.savefig('analog-digital.png')
 plt.show()
+
+# %%
